@@ -1,0 +1,43 @@
+/* estilos propios*/
+#title {
+  margin: 0px auto;
+  margin-bottom: 70px;
+  margin-top: 20px;
+  text-align: center;
+  width: 70%;
+}
+
+#title h1 {
+  border-bottom: 1px solid #ccc;
+  font-family: "finger";
+  font-size: 60px;
+  padding-bottom: 5px;
+}
+
+#title h2 {
+  color: gray;
+  font-size: 25px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+article.about {
+  font-size: 23px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.about h2 {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.about p {
+  padding-bottom: 30px;
+  padding-top: 20px;
+  text-align: justify;
+}
+
+/*# sourceMappingURL=about.component.css.map */
