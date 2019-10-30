@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using MongoDB.Driver;
+﻿using MongoDB.Driver;
 using PortafolioWebLeo.Contexts;
 using PortafolioWebLeo.Models;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace PortafolioWebLeo.Services
 {
@@ -24,7 +22,7 @@ namespace PortafolioWebLeo.Services
 
         public Project Get(string id) => _projects.Find<Project>(project => project.Id == id).FirstOrDefault();
 
-        public  Project Create(Project project)
+        public Project Create(Project project)
         {
             _projects.InsertOne(project);
             return project;
