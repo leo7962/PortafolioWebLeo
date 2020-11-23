@@ -32,14 +32,14 @@ import { ProjectsComponent } from "./components/projects/projects.component";
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: "", component: HomeComponent, pathMatch: "full" },
-      { path: "counter", component: CounterComponent },
-      { path: "fetch-data", component: FetchDataComponent },
-      { path: "sobre-mi", component: AboutComponent },
-      { path: "contacto", component: ContactComponent },
-      { path: "crear-proyecto", component: CreateComponent },
-      { path: "proyectos", component: ProjectsComponent },
-    ])
+    { path: "", component: HomeComponent, pathMatch: "full" },
+    { path: "counter", component: CounterComponent },
+    { path: "fetch-data", component: FetchDataComponent },
+    { path: "sobre-mi", component: AboutComponent },
+    { path: "contacto", component: ContactComponent },
+    { path: "crear-proyecto", component: CreateComponent },
+    { path: "proyectos", component: ProjectsComponent },
+], { relativeLinkResolution: 'legacy' })
   ],
   providers: [],
   bootstrap: [AppComponent]

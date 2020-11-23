@@ -1,5 +1,5 @@
 ﻿/// <reference path="../../../../../node_modules/@types/jasmine/index.d.ts" />
-import { TestBed, async, ComponentFixture, ComponentFixtureAutoDetect } from "@angular/core/testing";
+import { TestBed, ComponentFixture, ComponentFixtureAutoDetect, waitForAsync } from "@angular/core/testing";
 import { BrowserModule } from "@angular/platform-browser";
 import { AboutComponent } from "./about.component";
 
@@ -8,7 +8,7 @@ let fixture: ComponentFixture<AboutComponent>;
 
 describe("about component",
   () => {
-    beforeEach(async(() => {
+    beforeEach(waitForAsync(() => {
       TestBed.configureTestingModule({
         declarations: [AboutComponent],
         imports: [BrowserModule],
@@ -21,7 +21,7 @@ describe("about component",
     }));
 
     it("should do something",
-      async(() => {
+      waitForAsync(() => {
         expect(true).toEqual(true);
       }));
   });
